@@ -47,9 +47,9 @@ html, body {
 /* line 55, scss/main.scss */
 button[name="menu-hide"] {
   color: #71777d;
-  font-size: 25px;
+  font-size: 18px;
   border: none;
-  padding: 6px 10px;
+  padding: 12px 14px;
   background-color: transparent; }
   /* line 62, scss/main.scss */
   button[name="menu-hide"]:hover, button[name="menu-hide"]:focus {
