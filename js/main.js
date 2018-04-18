@@ -1,10 +1,11 @@
 window.onload = function () {
-  document.getElementById('menu-hide').addEventListener('click', function(){
-    var menuSlide = document.getElementById('menu-slide');
-    if(menuSlide.hidden){
-      menuSlide.hidden = false;
-    }else{
-      menuSlide.hidden = true;
-    }
-  }) 
+  slideForHide();
+
+}
+
+function slideForHide(){
+  var menuBtnToHide = document.getElementById('menuBtnToHide');
+  menuBtnToHide.addEventListener('click', function(){
+    var menu = document.getElementById('menu');
+  })
 }

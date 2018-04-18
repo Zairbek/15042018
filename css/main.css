@@ -38,21 +38,21 @@ html, body {
   position: fixed;
   top: 40px;
   bottom: 0;
-  left: 0;
+  left: calc(100%/-4);
   width: calc(100%/4);
   background-color: #f7f6f0;
   box-shadow: 3px 0 0 rgba(0, 0, 0, 0.3);
-  transition: all 3s linear; }
+  transition: transform 1s ease-out; }
 
 /* line 55, scss/main.scss */
-button[name="menu-hide"] {
+button[name="menuBtnToHide"] {
   color: #71777d;
   font-size: 18px;
   border: none;
   padding: 12px 14px;
   background-color: transparent; }
   /* line 62, scss/main.scss */
-  button[name="menu-hide"]:hover, button[name="menu-hide"]:focus {
+  button[name="menuBtnToHide"]:hover, button[name="menuBtnToHide"]:focus {
     outline: none;
     cursor: pointer; }
 

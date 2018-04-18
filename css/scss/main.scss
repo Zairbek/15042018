@@ -39,20 +39,20 @@ html, body{
   position: fixed;
   top: 40px;
   bottom: 0;
-  left: 0;
+  left: calc(100%/-4);
   width: calc(100%/4);
   background-color: rgba(247,246,240,1);
   box-shadow: 3px 0 0 rgba(0,0,0,.3);
 
 
-  transition: all 3s linear ;
+  transition: transform 1s ease-out ;
 }
 
 
 
 
 
-button[name="menu-hide"] {
+button[name="menuBtnToHide"] {
   color:  #71777d;
   font-size: 18px;
   border: none;
