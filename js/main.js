@@ -1,5 +1,5 @@
 window.onload = function () {
-  swipeForShow('+', 'swipeBtnToShow', 'swipeElement','0.3');
+  swipeForShow('+', 'swipeBtnToShow', 'swipeElement','0.5');
 
 }
 
@@ -25,7 +25,7 @@ function swipeForShow(axicX = '+', swipeBtnToShow, swipeElement, delay = '0.4'){
     if(swipeElement.style.transform){
       swipeElement.style.transform = null;
     }else{
-      swipeElement.style.transition = 'transform ' + delay +'s ease-out';
+      swipeElement.style.transition = 'transform ' + delay +'s ease-in-out';
       swipeElement.style.transform = 'translateX(' + axicX + widthElement + 'px)';
     } 
   }
