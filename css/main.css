@@ -33,8 +33,9 @@ html, body {
   background-color: #f7f6f0;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); }
 
-/* line 38, scss/main.scss */
-.menu {
+/*====================swipeElement==================== */
+/* line 109, scss/main.scss */
+.swipeElement {
   position: fixed;
   top: 40px;
   bottom: 0;
@@ -43,16 +44,42 @@ html, body {
   background-color: #f7f6f0;
   box-shadow: 3px 0 0 rgba(0, 0, 0, 0.3); }
 
-/* line 54, scss/main.scss */
+/* line 118, scss/main.scss */
 button[name="swipeBtnToHide"] {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  text-align: center;
   color: #71777d;
   font-size: 18px;
-  border: none;
-  padding: 12px 14px;
-  background-color: transparent; }
-  /* line 61, scss/main.scss */
+  transition: background-color .3s ease-in-out; }
+  /* line 128, scss/main.scss */
   button[name="swipeBtnToHide"]:hover, button[name="swipeBtnToHide"]:focus {
     outline: none;
+    cursor: pointer;
+    background-color: #71777d;
+    color: #fff; }
+
+/* line 136, scss/main.scss */
+.x-for-hide {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+  background-color: transparent;
+  transition: background-color .3s ease-in-out;
+  font-size: 26px;
+  color: #71777d;
+  text-align: center; }
+  /* line 151, scss/main.scss */
+  .x-for-hide:hover {
+    color: #fff;
+    background-color: #71777d;
     cursor: pointer; }
+
+/*====================swipeElement==================== */
 
 /*# sourceMappingURL=main.css.map */
