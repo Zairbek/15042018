@@ -3,17 +3,17 @@ window.onload = function () {
 
 }
 
- 
-function getId (idArgument) {                   // Функция для быстрое получение ID   
+//==================== Функция для быстрое получение ID
+function getId (idArgument) {   
   return document.getElementById(idArgument);
-}
+}//==================== Функция для быстрое получение ID
 
 
 
 
 
 
-
+// ==================   swipeForShow
 function swipeForShow(axicX = '+', swipeBtnToShow, swipeElement, delay = '0.4'){
 // axicX (по умолчанию "+") - направление по оси х
 // swipeBtnToShow - кнопка для появление элемента
@@ -26,16 +26,13 @@ function swipeForShow(axicX = '+', swipeBtnToShow, swipeElement, delay = '0.4'){
   var axicX = axicX;  
   
   var xForHide = getId('x-for-hide');
-
-
-
   
   xForHide.addEventListener('click', function(){
     swipeElement.style.transform = null;
   })
 
   swipeBtnToShow.addEventListener('click', action);
-  
+
   function action(elem){
     if(swipeElement.style.transform){
       swipeElement.style.transform = null;
@@ -45,4 +42,4 @@ function swipeForShow(axicX = '+', swipeBtnToShow, swipeElement, delay = '0.4'){
       swipeElement.style.transform = 'translateX(' + axicX + widthElement + 'px)';
     } 
   }
-}
+}// ==================   swipeForShow
